@@ -1,0 +1,20 @@
+[04:50:53] [main/INFO]: Loading Minecraft 1.21.5 with Fabric Loader 0.16.14
+[04:50:53] [main/WARN]: Mod resolution failed
+[04:50:53] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE xaerominimap 25.2.7 {depends fabric-api @ [>=0.43.1]}, ROOT_FORCELOAD_SINGLE xaerominimap 25.2.7]
+[04:50:53] [main/INFO]: Reason: [HARD_DEP xaerominimap 25.2.7 {depends fabric-api @ [>=0.43.1]}, HARD_DEP xaerominimap 25.2.7 {depends minecraft @ [>1.21.5]}]
+[04:50:53] [main/INFO]: Fix: add [add:fabric-api 0.43.1 ([[0.43.1,∞)])], remove [], replace [[minecraft 1.21.5] -> add:minecraft 1.21.6- ([(1.21.5,∞)])]
+[04:50:53] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric-api, version 0.43.1 or later.
+	 - Replace 'Minecraft' (minecraft) 1.21.5 with any version after 1.21.5.
+More details:
+	 - Mod 'Xaero's Minimap' (xaerominimap) 25.2.7 requires version 0.43.1 or later of fabric-api, which is missing!
+	 - Mod 'Xaero's Minimap' (xaerominimap) 25.2.7 requires any version after 1.21.5 of 'Minecraft' (minecraft), but only the wrong version is present: 1.21.5!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69) [fabric-server-launch.jar:1.0.3]
